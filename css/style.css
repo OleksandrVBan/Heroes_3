@@ -21,6 +21,10 @@ a {
 	color: #31420b;
 	text-decoration: underline;
 }
+a:hover {
+	color: #8bbd1d;
+}
+
 .mainwrapper {
 	margin: 0 auto;
 	width: 900px;
@@ -48,11 +52,22 @@ a {
 
 .main-block {
 	padding: 0 15px 40px;
-
 }
+
 .content {
 	float: left;
 	width: 570px;
+	font-size: 16px;
+	line-height: 24px;
+}
+
+.content h1 {
+	font-size: 28px;
+	line-height: 38px;
+}
+
+.content p {
+	text-indent: 20px;
 }
 
 .sidebar {
@@ -62,8 +77,12 @@ a {
 }
 
 .sidebar h2 {
+	padding: 8px 15px;
 	color: #fff;
-background: #31420b
+	font-weight: normal;
+	font-size: 22px;
+	line-height: 32px;
+	background: #31420b;
 }
 
 .sidebar menu {
