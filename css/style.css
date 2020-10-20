@@ -3,7 +3,9 @@ body {
 	margin-top: 12px 0;
 	background: #81865c url(../images/bg.jpg) repeat left top;
 }
-.clearfix {
+.clearfix:after {
+	content: "";
+	display: block;
 	clear: both;
 }
 .pull-left {
@@ -32,10 +34,38 @@ a:hover {
 	border-radius: 8px;
 }
 .header-wrapper {
-	padding: 0 15px;
+	padding: 8px 15px;
 }
-.logo {
+.logo,
+.logo:hover {
+	position: relative;
 	float: left;
+	padding-left: 214px;
+	width: 200px;
+	color: black;
+	font-size: 64px;
+	line-height: 90px;
+	letter-spacing: 16px;
+	text-align: center;
+	text-decoration: none;
+}
+ 
+.logo:first-line {
+	font-size: 50px;
+	line-height: 70px;
+	text-transform: uppercase;
+	letter-spacing: 0;
+}
+.logo span {
+	display: block;
+	font-size: 24px;
+	line-height: 36px;
+	letter-spacing: 0;
+}
+.logo img {
+	position: absolute;
+	left: 0;
+	top: 0;
 }
 
 .contact-info {
